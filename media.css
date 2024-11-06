@@ -1,0 +1,106 @@
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 0; /* Уменьшаем отступы в шапке */
+    }
+
+    .logo {
+        font-size: 2rem; /* Уменьшаем размер логотипа */
+    }
+
+    .menu {
+        
+        align-items: center; /* Центрируем элементы меню */
+    }
+
+    .menu li {
+        margin: 10px 10px; /* Увеличиваем отступы между пунктами меню */
+    }
+
+    .first-block {
+        padding: 30px 10px; /* Уменьшаем отступы в первом блоке */
+        text-align: center; /* Центрируем текст */
+    }
+
+    .create {
+        font-size: 40px; /* Уменьшаем размер шрифта */
+    }
+
+    .combined-title {
+        font-size: 30px; /* Уменьшаем размер шрифта */
+    }
+
+    .discuss-button {
+        width: 100%; /* Кнопка на всю ширину */
+        height: 50px; /* Уменьшаем высоту кнопки */
+    }
+
+        .content {
+            flex-direction: column; /* Расположение по вертикали на меньших экранах */
+            align-items: center; /* Центрирование содержимого */
+        }
+        
+        .profile-image {
+            margin: 0 0 0px 0; /* Убираем правый отступ, добавляем снизу */
+            width: 94%;
+            height: auto;
+        } 
+        .text-block {
+        max-width: 100%; /* Убираем максимальную ширину */
+        margin: 0; /* Убираем отступы */
+    }
+
+    .skills-title {
+        font-size: 30px; /* Уменьшаем размер шрифта */
+    }
+
+    .skills-buttons {
+        flex-direction: column; /* Кнопки вертикально */
+        gap: 10px; /* Уменьшаем отступы между кнопками */
+    }
+
+    .closing-text {
+        max-width: 90%; /* Увеличиваем ширину текста */
+    }
+
+    .small-image {
+        height: auto; /* Сохраняем пропорции */
+        width: 50%;
+    }
+
+    .collaboration-text {
+        width: 80%; /* Уменьшаем ширину текста */
+    }
+    }
+
+
+
+ 
+/* Адаптивность для планшетов */
+@media (max-width: 1024px) {
+    .first-block {
+        padding: 40px 15px; /* Уменьшаем отступы в первом блоке */
+    }
+
+    .create {
+        font-size: 50px; /* Уменьшаем размер шрифта */
+    }
+
+    .combined-title {
+        font-size: 30px; /* Уменьшаем размер шрифта */
+    }
+
+    .discuss-button {
+        width: 80%; /* Кнопка на 80% ширины */
+    }
+
+    .skills-buttons {
+        gap: 15px; /* Уменьшаем отступы между кнопками */
+    }
+
+    .collaboration-text {
+        width: 70%; /* Уменьшаем ширину текста */
+    }
+}
+
+

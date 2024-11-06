@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=NauryzRedKeds&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Портфолио</title>
+</head>
+<body>
+
+    <div class="header">
+        <h1 class="logo">MuR</h1>
+        <div class="navbar">
+            <ul class="menu">
+                <li><a href="#">Обо мне</a></li>
+                <li><a href="#">Мои работы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section first-block">
+        <h2 class="create">Создаю</h2>
+        <h3 class="combined-title">УДОБНЫЕ САЙТЫ <br> С СОВРЕМЕННЫМ ДИЗАЙНОМ</h3><br>
+        <button class="discuss-button">ОБСУДИТЬ ПРОЕКТ</button>
+    </div>
+
+    <div class="section second-block">
+        <h2 class="greeting" style="font-size: 30px;">Привет, меня зовут Регина!</h2>
+        <div class="content">
+            <img src="your-image-url.jpg" alt="Регина" class="profile-image">
+            <div class="text-block">
+                <div class="info-block">
+                    <p>Я получаю образование по специальности «Информационные системы и программирование». В настоящее время я нахожусь на выпускном курсе и стремлюсь развивать свои навыки и знания в этой увлекательной области.</p>
+                </div>
+                <div class="info-block outlined">
+                    <p>За время обучения я приобрела навыки в создании сайтов и веб-дизайне, что позволяет мне реализовать свои идеи и воплотить проекты в жизнь.</p>
+                </div>
+            </div>
+        </div>
+    
+        <h3 class="skills-title" style="font-size: 30px;">Мои навыки</h3>
+        <div class="skills-buttons">
+            <button class="skills-button">Верстка сайтов</button>
+            <button class="skills-button">Дизайн для печати</button>
+            <button class="skills-button">Web-дизайн</button>
+        </div>
+    
+        <div class="closing-text">
+            Я стараюсь подходить к каждому проекту с душой и вниманием к деталям, и именно поэтому со мной комфортно работать. Я всегда открыта для обсуждения идей и предложений, и считаю, что успешное сотрудничество основывается на взаимопонимании.
+        </div>
+        
+        <img src="1.png" alt="Описание изображения" class="small-image">
+        
+        <div class="collaboration">
+            <div class="ellipse-background"></div>
+            <p class="collaboration-text">Если вы ищете надежного партнера для разработки ваших идей, буду рада обсудить возможные варианты сотрудничества!</p>
+        </div>     
+    </div>
+
+    <section class="portfolio-section">
+        <div class="container">
+            <h2 class="portfolio-title">Мои работы</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" onclick="openModal('site1.png')">
+                    <img src="site1.png" alt="Проект 1" class="portfolio-image">
+                    <h3 class="portfolio-item-title">Название проекта 1</h3>
+                    <p class="portfolio-item-description">Краткое описание проекта 1.</p>
+                    <a href="link/to/project1" class="portfolio-link">Смотреть проект</a>
+                </div>
+                <div class="portfolio-item" onclick="openModal('site2.png')">
+                    <img src="site2.png" alt="Проект 2" class="portfolio-image">
+                    <h3 class="portfolio-item-title">Название проекта 2</h3>
+                    <p class="portfolio-item-description">Краткое описание проекта 2.</p>
+                    <a href="link/to/project2" class="portfolio-link">Смотреть проект</a>
+                </div>
+                <div class="portfolio-item" onclick="openModal('path/to/your/project3.jpg')">
+                    <img src="path/to/your/project3.jpg" alt="Проект 3" class="portfolio-image">
+                    <h3 class="portfolio-item-title">Название проекта 3</h3>
+                    <p class="portfolio-item-description">Краткое описание проекта 3.</p>
+                    <a href="link/to/project3" class="portfolio-link">Смотреть проект</a>
+                </div>
+                <div class="portfolio-item" onclick="openModal('w1.jpeg')">
+                    <img src="w1.jpeg" alt="Проект 4" class="portfolio-image">
+                    <h3 class="portfolio-item-title">Название проекта 4</h3>
+                    <p class="portfolio-item-description">Краткое описание проекта 4.</p>
+
+                </div>
+                <div class="portfolio-item" onclick="openModal('w2.jpeg')">
+                    <img src="w2.jpeg" alt="Проект 5" class="portfolio-image">
+                    <h3 class="portfolio-item-title">Название проекта 5</h3>
+                    <p class="portfolio-item-description">Краткое описание проекта 5.</p>
+
+                </div>
+                <div class="portfolio-item" onclick="openModal('w3.jpeg')">
+                    <img src="w3.jpeg" alt="Проект 6" class="portfolio-image">
+                    <h3 class="portfolio-item-title">Название проекта 6</h3>
+                    <p class="portfolio-item-description">Краткое описание проекта 6.</p>
+
+                </div>
+            </div>
+        </div>
+    
+        <!-- Модальное окно для изображений -->
+        <div id="modal" class="modal" onclick="closeModal()">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modal-image">
+            <div id="caption"></div>
+        </div>
+
+        <div class="skills-buttons">
+            <button class="skills-button">Ещё больше работ</button>
+        </div>
+    
+    </section>
+
+
+    
+    
+
+    
+  
+
+<script src="app.js"></script>
+</body>
+</html>

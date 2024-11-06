@@ -1,0 +1,438 @@
+body {
+    margin: 0;
+    font-family:'Montserrat', sans-serif; /* Указанный шрифт */ ;
+    background-color: #F8F5F0;
+    color: #6B9080;
+}
+
+.header {
+    background-color: #F8F5F0; /* Цвет фона шапки как у основного блока */
+    color: #6B9080; /* Цвет текста шапки */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    padding: 0 20px; /* Отступы по бокам */
+}
+
+.logo {
+    font-family: 'NauryzRedKeds', sans-serif;
+    font-size: 3rem; /* Увеличен размер шрифта для логотипа */
+    margin-bottom: 15px; /* Увеличены отступы */
+}
+
+.navbar {
+    margin-top: 10px; /* Меньший отступ сверху для навигации */
+}
+
+.menu {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Центрируем меню */
+}
+
+.menu li {
+    margin: 0 15px; /* Увеличены отступы между пунктами меню */
+}
+
+.menu a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #6B9080; /* Цвет текста */
+    font-family: 'NauryzRedKeds', sans-serif; /* Указанный шрифт */
+    font-size: 1.2rem; /* Увеличен размер шрифта для пунктов меню */
+}
+
+.menu a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+.section {
+    padding: 80px 0 20px; /* Отступ сверху для блока */
+    margin-top: 20px; /* Отступ сверху между шапкой и блоком */
+}
+
+.first-block {
+    text-align: left; /* Выравнивание текста по левому краю */
+    padding: 50px 20px;
+    margin: 2%;
+}
+
+.create {
+    font-family: 'NauryzRedKeds', sans-serif;
+    font-size: 80px; /* Увеличен размер шрифта для "Создаю" */
+    color: #6B9080;
+    margin: 0%;
+}
+
+.combined-title {
+    font-family: 'Montserrat', sans-serif; /* Указанный шрифт */
+    font-size: 80px; /* Увеличен размер шрифта для объединенного заголовка */
+    color: #6B9080;
+    margin: 10px 0 20px; /* Увеличены отступы */
+}
+
+.discuss-button {
+    background-color: #6B9080; /* Цвет фона кнопки */
+    color: #F8F5F0; /* Цвет текста кнопки */
+    border: none; /* Убираем рамки */
+    font-family: 'Montserrat', sans-serif; /* Указанный шрифт */
+    font-size: 1rem; /* Размер шрифта для кнопки */
+    cursor: pointer; /* Указываем, что это кнопка */
+    border-radius: 15px; /* Скругление углов */
+    width: 225px; /* Ширина кнопки */
+    height: 55px; /* Высота кнопки */
+    padding: 12px; /* Внутренние отступы кнопки */
+    transition: background-color 0.4s ease, color 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Плавные переходы */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Легкая тень */
+}
+
+.discuss-button:hover {
+    background-color: #5a7d72; /* Цвет фона кнопки при наведении */
+    color: #E0E0E0; /* Цвет текста кнопки при наведении */
+    transform: scale(1.05); /* Увеличение при наведении */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Увеличенная тень при наведении */
+}
+
+
+/* Круг */
+.first-block::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100px; /* Положение по оси X (от центра) */
+    width: 650px; /* Увеличена ширина круга */
+    height: 650px; /* Увеличена высота круга */
+    background: rgba(107, 144, 128, 0.349); /* Цвет фона с прозрачностью */
+    border-radius: 50%; /* Округление для получения круга */
+    z-index: 10; /* Убираем на задний план */
+    filter: blur(70px); /* Размытие */
+    transform: translateY(-50%); /* Центрирование по вертикали */
+}
+
+/**/
+
+.second-block {
+    position: relative;
+    padding: 80px 20px;
+    text-align: center;
+    margin: 2%;
+}
+
+.greeting {
+    font-family: 'NauryzRedKeds', sans-serif;
+    font-size: 20px;
+    color: #6B9080;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.text-block {
+    max-width: 400px; /* Максимальная ширина блока текста */
+    margin-right: 20px; /* Отступ между текстом и изображением */
+}
+
+.info-block {
+    background-color: #6B9080; /* Цвет фона блока */
+    color: #F8F5F0; /* Цвет текста */
+    padding: 20px;
+    border-radius: 15px; /* Закругление углов */
+    margin-bottom: 20px; /* Отступ между блоками */
+    text-align: center; /* Центрирование текста */
+}
+
+.outlined {
+    background-color: transparent; /* Прозрачный фон */
+    border: 1px solid #6B9080; /* Обводка */
+}
+
+.profile-image {
+    border-radius: 15px; /* Закругление изображения */
+    width: 431px; /* Ширина изображения */
+    height: 269px; /* Высота изображения */
+}
+
+.skills-title {
+    font-family: 'NauryzRedKeds', sans-serif;
+    font-size: 30px;
+    color: #6B9080;
+    margin: 30px 0 20px; /* Отступы сверху и снизу */
+}
+
+.skills-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Отступы между кнопками */
+    margin-bottom: 30px; /* Отступ снизу */
+}
+
+.skills-button {
+    background-color: transparent; /* Прозрачный фон */
+    color: #6B9080; /* Цвет текста */
+    border: 1px solid #6B9080; /* Обводка */
+    border-radius: 15px; /* Закругление углов */
+    padding: 10px 20px; /* Внутренние отступы */
+    cursor: pointer; /* Указатель для курсора */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Плавные переходы */
+}
+
+.skills-button:hover {
+    background-color: #6B9080; /* Цвет фона кнопки при наведении */
+    color: #F8F5F0; /* Цвет текста кнопки при наведении */
+}
+
+.closing-text {
+    max-width: 800px; /* Максимальная ширина текста */
+    margin: 0 auto; /* Центрирование текста */
+    color: #6B9080; /* Цвет текста */
+}
+.second-block {
+    position: relative;
+    padding: 80px 20px;
+    text-align: center;
+    margin: 2%;
+}
+
+.greeting {
+    font-family: 'NauryzRedKeds', sans-serif;
+    font-size: 50px;
+    color: #6B9080;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.profile-image {
+    border-radius: 15px; /* Закругление изображения */
+    width: 431px; /* Ширина изображения */
+    height: 269px; /* Высота изображения */
+    margin-right: 20px; /* Отступ между изображением и текстом */
+}
+
+.info-container {
+    display: flex; /* Используем Flexbox для выравнивания блоков */
+    justify-content: space-between; /* Распределяем пространство между блоками */
+}
+
+.text-block {
+    max-width: 473px; /* Максимальная ширина блока текста */
+    flex: 1; /* Каждый блок будет занимать равное пространство */
+    box-sizing: border-box; /* Учитываем отступы и границы в общей высоте и ширине */
+}
+
+.info-block {
+    background-color: #6B9080; /* Цвет фона блока */
+    color: #F8F5F0; /* Цвет текста */
+    padding: 20px;
+    border-radius: 15px; /* Закругление углов */
+    margin: 10px; /* Отступы между блоками */
+    text-align: center; /* Центрирование текста */
+    font-family: 'Montserrat', sans-serif; /* Шрифт для блока */
+    font-size: 14px;
+}
+
+.outlined {
+    background-color: transparent; /* Прозрачный фон */
+    border: 1px solid #6B9080; /* Обводка */
+    color: #6B9080; /* Цвет текста для второго блока */
+}
+
+.skills-title {
+    font-family: 'NauryzRedKeds', sans-serif;
+    font-size: 40px;
+    color: #6B9080;
+    margin: 30px 0 20px; /* Отступы сверху и снизу */
+}
+
+.skills-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Отступы между кнопками */
+    margin-bottom: 30px; /* Отступ снизу */
+}
+
+.skills-button {
+    background-color: transparent; /* Прозрачный фон */
+    color: #6B9080; /* Цвет текста */
+    border: 1px solid #6B9080; /* Обводка */
+    border-radius: 15px; /* Закругление углов */
+    padding: 10px 20px; /* Внутренние отступы */
+    cursor: pointer; /* Указатель для курсора */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Плавные переходы */
+    font-family: 'Montserrat', sans-serif; /* Шрифт для блока */
+    font-weight: 900;
+}
+
+.skills-button:hover {
+    background-color: #6B9080; /* Цвет фона кнопки при наведении */
+    color: #F8F5F0; /* Цвет текста кнопки при наведении */
+}
+
+.closing-text {
+    max-width: 800px; /* Максимальная ширина текста */
+    margin: 0 auto; /* Центрирование текста */
+    color: #6B9080; /* Цвет текста */
+    font-family: 'Montserrat', sans-serif; /* Шрифт для блока */
+}
+
+
+
+.closing-text {
+    max-width: 800px; /* Максимальная ширина текста */
+    margin: 0 auto; /* Центрирование текста */
+    color: #6B9080; /* Цвет текста */
+    text-align: center; /* Центрирование текста */
+}
+
+.small-image {
+    width: 15%; /* Установите нужный размер изображения */
+    height: auto; /* Сохранение пропорций */
+    display: block; /* Отображение как блочный элемент */
+    margin: 20px auto; /* Центрирование изображения */
+}
+
+.collaboration {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Выравнивание по вертикали */
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Отступ сверху и снизу */
+}
+
+.ellipse-background {
+    position: absolute;
+    width: 650px; /* Ширина элипса */
+    height: 190px; /* Высота элипса */
+    background: rgba(107, 144, 128, 0.312); /* Цвет с прозрачностью */
+    border-radius: 50%; /* Округление для получения элипса */
+    z-index: 0; /* Отправляем на задний план */
+    transform: translate(-50%, -50%); /* Центрирование по вертикали и горизонтали */
+    top: 50%; /* Центрирование по вертикали */
+    left: 50%; /* Центрирование по горизонтали */
+    filter: blur(50px); /* Размытие */
+}
+
+.collaboration-text {
+    position: relative;
+    z-index: 1; /* Поверх элипса */
+    font-family: 'Montserrat', sans-serif; /* Шрифт текста */
+    color: #6B9080; /* Цвет текста */
+    text-align: center; /* Центрирование текста */
+    padding: 20px; /* Внутренние отступы */
+    width: 30%;
+}
+
+
+
+
+
+
+
+.combined-title{
+    font-family: 'NauryzRedKeds', sans-serif;
+    font-size: 40px;
+    color: #6B9080;
+    margin: 30px 0 20px; /* Отступы сверху и снизу */  
+}
+
+
+.portfolio-section {
+    padding: 80px 0; /* Отступы сверху и снизу */
+    background-color: var(--main-bg-color); /* Фон секции */
+}
+
+.portfolio-title {
+    font-family: 'NauryzRedKeds', sans-serif;
+    font-size: 40px;
+    color: var(--main-text-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portfolio-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: var(--main-text-color);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет элементам обтекать */
+    justify-content: center; /* Центрирует элементы */
+    gap: 20px; /* Отступы между карточками */
+}
+
+.portfolio-item {
+    background-color: var(--button-bg-color); /* Фон карточки */
+    color: var(--button-text-color); /* Цвет текста */
+    border-radius: 15px; /* Скругление углов */
+    padding: 20px; /* Внутренние отступы */
+    text-align: center; /* Центрирование текста */
+    width: 300px; /* Ширина карточки */
+    transition: transform 0.3s; /* Плавный переход при наведении */
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05); /* Увеличение карточки при наведении */
+}
+
+.portfolio-image {
+    width: 100%; /* Ширина изображения */
+    height: auto; /* Сохранение пропорций */
+    border-radius: 10px; /* Скругление углов изображения */
+}
+
+.portfolio-item-title {
+    font-family: 'NauryzRedKeds', sans-serif;
+    font-size: 24px;
+    margin: 15px 0 10px; /* Отступы между заголовком и описанием */
+}
+
+.portfolio-item-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-bottom: 15px; /* Отступ снизу */
+}
+
+.portfolio-link {
+    background-color: var(--button-bg-color); /* Цвет фона ссылки */
+    color: var(--button-text-color); /* Цвет текста ссылки */
+    padding: 10px 20px; /* Внутренние отступы */
+    border-radius: 10px; /* Скругление углов */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: background-color 0.3s; 
+}
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Открывается поверх контента */
+    z-index: 1000; /* На переднем плане */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Добавляет прокрутку, если необходимо */
+    background-color: rgba(0, 0, 0, 0.8); /* Затемнение фона */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%; }
+
